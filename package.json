@@ -6,9 +6,10 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "01-os.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js",
+    "dev":"nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/negaromanzir-lab/NodeJS/issues"
   },
-  "homepage": "https://github.com/negaromanzir-lab/NodeJS#readme"
+  "homepage": "https://github.com/negaromanzir-lab/NodeJS#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
