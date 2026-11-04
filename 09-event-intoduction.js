@@ -1,0 +1,19 @@
+//event-driven in programming 
+// used heavly in Node.js
+
+const EventEmitter = require('events');
+
+const customEmitter = new EventEmitter()
+
+// on - listen for an event
+// emit - emit an event
+// order is matter
+
+customEmitter.on('response', (name, id) => {
+	console.log('data recieved user: ', name, ', with id: ',id)
+})
+customEmitter.on('response', () => {
+	console.log('some other logic here ... ')
+})
+
+customEmitter.emit('response', 'John', 34)
